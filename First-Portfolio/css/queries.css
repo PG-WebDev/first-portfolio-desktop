@@ -1,0 +1,56 @@
+/* rem and em do NOT depend on HTML font-size in media queries.
+Instead, we asume that 1rem = 1em = 16px */
+
+/* *****************************/
+/* BELOW 1344PX (Smaller Desktops) */
+/* *****************************/
+/* width = 1344 / 16 = 84 */
+
+@media (max-width: 84em) {
+  .header {
+    padding: 4.8rem 3.2rem;
+  }
+  .logo {
+    font-size: 2rem;
+  }
+  .section-design {
+    /* max-width: 120rem; */
+    padding-bottom: 2.4rem;
+  }
+  .heading-primary {
+    font-size: 5.2rem;
+  }
+  .home-description {
+    font-size: 2rem;
+  }
+  .home {
+    gap: 0px;
+  }
+}
+/* *****************************/
+/* BELOW 1027PX (Smaller Desktops) */
+/* *****************************/
+/* width = 1027 / 16 = 64 */
+@media (max-width: 64em) {
+  .header {
+    padding: 2.4rem;
+  }
+  .section-home {
+    padding: 9.6rem 0 9.6rem 0;
+    height: 48rem;
+    max-width: 120rem;
+  }
+  .home {
+    justify-content: center;
+    align-items: center;
+  }
+  .img-box-home img {
+    height: 20rem;
+    width: 20rem;
+  }
+  .border-white-img {
+    height: 20rem;
+    width: 20rem;
+    transform: translate(1rem, 1rem);
+  }
+}
